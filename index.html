@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CASTLE Header</title>
+
+    <link href="https://fonts.cdnfonts.com/css/waltograph" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="navbar">
+
+<header class="header">
+
+    <div class="brand">
+        <img src="Images/letter-c-linked-monogram-crown-260nw-1564076068-removebg-preview.png" alt="castle logo" class="brand-logo">
+        <h1 class="brand-name">ASTLE</h1>
+    </div>
+
+    <div class="header-controls">
+
+        <select class="language-select">
+            <option>English</option>
+            <option>Tamil</option>
+            <option>Hindi</option>
+        </select>
+
+        <div class="search-box">
+            <input type="text" placeholder="Search...">
+            <i class="fa fa-search"></i>
+        </div>
+
+      
+        <div class="cart">
+            <i class="fa fa-shopping-cart"></i>
+            <span id="cart-count">0</span>
+        </div>
+
+    </div>
+
+</header>
+  </div>
+
+
+<script>
+    function updateCart(count) {
+        document.getElementById("cart-count").textContent = count;
+    }
+
+</script>
+<!-- Main Navigation Bar -->
+<nav class="main-nav">
+    <!-- Menu Icon -->
+<div class="menu-icon" onclick="openMenu()">
+  ☰
+</div>
+
+<!-- Sidebar -->
+<div id="sidebar">
+  <div class="sidebar-header">
+    <img src="Images/user.png" class="profile-icon" alt="Profile"
+    <span class="hello-text">Hello! Sign in</span>
+  </div>
+
+  <h3>Help & Settings</h3>
+
+  <ul>
+    <li>Your Account</li>
+    <li>Customer Service</li>
+    <li>Sign In</li>
+  </ul>
+</div>
+
+<!-- Overlay -->
+<div id="overlay" onclick="closeMenu()"></div>
+
+    <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#bestsellers">BestSellers</a></li>
+        
+        <li class="dropdown">
+            <a href="#">Brands ▼</a>
+            <ul class="dropdown-menu">
+                <li><a href="#">Gucci</a></li>
+                <li><a href="#">Chanel</a></li>
+                <li><a href="#">Louis Vuitton</a></li>
+                <li><a href="#">Prada</a></li>
+                <li><a href="#">YSL (Saint Laurent)</a></li>
+                <li><a href="#">Hermès</a></li>
+                <li><a href="#">Dior</a></li>
+                <li><a href="#">Fendi</a></li>
+                <li><a href="#">Versace</a></li>
+                <li><a href="#">Balenciaga</a></li>
+                <li><a href="#">Burberry</a></li>
+                <li><a href="#">Givenchy</a></li>
+                <li><a href="#">Bottega Veneta</a></li>
+            </ul>
+        </li>
+        
+        <li class="products dropdown">
+            <a href="#">Castle Products ▼</a>
+        <ul class="products dropdown-menu">               
+                    <li><a href="#">Castle Crystal-Embellished Heels</a></li>
+                <li><a href="#">Castle Italian Lambskin Leather Jacket</a></li>
+                <li><a href="#">Castle Hand-Knitted Crochet Top</a></li>
+                <li><a href="#">Castle Silk Satin Button-Down Shirt</a></li>
+                <li><a href="#">Castle Velvet Cocktail Dress</a></li>
+                <li><a href="#">Castle Croc-Embossed Mini Bag</a></li>
+                <li><a href="#">Castle Premium Suede Stilettos</a></li>
+                <li><a href="#">Castle Quilted Satin Bomber Jacket</a></li>
+                <li><a href="#">Castle High-Waisted Tailored Trousers</a></li>
+                <li><a href="#">Castle Gold-Plated Statement Earrings</a></li>
+            </ul>
+        </li>
+        <li><a href="#accessories">Accessories</a></li>
+        <li><a href="#">Platinum Products</a></li>
+        <li><a href="#">Castle Pay</a></li>
+        <li><a href="#contact">Contact</a></li>
+        </ul>
+</nav>
+<div class="profile-dropdown" id="profileDropdown">
+        <div class="profile-header">
+            <img src="https://via.placeholder.com/40" alt="Profile Icon" class="profile-icon">
+            <span>Hello! Sign In</span>
+        </div>
+        <div class="profile-section">
+            <strong>Help & Settings</strong>
+        </div>
+        <div class="profile-links">
+            <a href="#">Your Account</a>
+            <a href="#">Customer Support</a>
+        </div>
+    </div>
+</nav>
+<!-- Gradient Background Wrapper -->
+ <div id="home">
+<div class="product-gradient-bg">
+  <div class="product-gallery">
+    <div class="product-card">
+      <img src="Images/model ad.jpg" alt="Product 1">
+      <h2 class="product-title">CASTLE</h2>
+    <p class="product-desc">Premium streetwear by Castle</p>
+    </div>
+    <div class="product-card">
+      <img src="Images/model ad2.jpg" alt="Product 2">
+      <h2 class="product-title">CASTLE</h2>
+    <p class="product-desc">Castlewear by Castle</p>
+    </div>
+    <div class="product-card">
+      <img src="Images/model ad3.jpg" alt="Product 3">
+      <h2 class="product-title">CASTLE</h2>
+    <p class="product-desc">Airport Outfit by Castle</p>
+    </div>
+    <div class="product-card">
+      <img src="Images/model ad4.jpg" alt="Product 4">
+      <h2 class="product-title">CASTLE</h2>
+    <p class="product-desc">Cosmetics by Castle</p>
+    </div>
+  </div>
+</div>
+<div id="bestsellers">
+<div class="product-bg">
+<div class="bestseller-section">
+  <h2 class="title">Bestsellers</h2>
+
+  <div class="slider-container" >
+    <button class="arrow left" onclick="moveLeft()">&#10094;</button>
+
+    <div class="slider">
+      <div class="slider-track" id="sliderTrack">
+
+        <!-- 10 Products -->
+        <div class="product"> 
+          <img src="Images/images (1).jfif"><p>Heels</p>
+        </div>
+        <div class="product"> 
+          <img src="Images/download (2).jfif"><p>Leather Jacket</p>
+        </div>
+        <div class="product"> 
+          <img src="Images/download (1).jfif"><p>Formal Shrug</p>
+        </div>
+
+      </div>
+    </div>
+
+    <button class="arrow right" onclick="moveRight()">&#10095;</button>
+  </div>
+</div>
+</div>
+<div id="accessories">
+<div class="accessories-section">
+  <h2 class="section-title">Accessories</h2>
+
+  <div class="accessories-row">
+    <div class="accessory-box">
+      <img src="Images/5f90bc0f-c248-4bff-8a88-54128a77c4a61715927218769HRXbyHrithikRoshanUnisexTexturedSneakers1.jpg" alt="Product 1">
+      <p>Black Cap</p>
+    </div>
+
+    <div class="accessory-box">
+      <img src="Images/65c7ebfb7d9dc974b2105f37-poedagar-men-watch-top-brand-luxury.jpg" alt="Product 2">
+      <p>Blue Wristband</p>
+    </div>
+
+    <div class="accessory-box">
+      <img src="Images/YSL_crosbody_Comp_1_00005.avif" alt="Product 3">
+      <p>Leather Belt</p>
+    </div>
+
+    <div class="accessory-box">
+      <img src="Images/Mens-Banner-copy.jpg" alt="Product 4">
+      <p>Sunglasses</p>
+    </div>
+  </div>
+  
+    
+
+
+     </div>
+  </div>
+  <div id="contact">
+  <footer class="footer">
+    
+    <div class="footer-left">
+        <h3>About Us</h3>
+        <p>
+            CASTLE is a modern wear and accessories brand built to bring everyday luxury,
+            confidence, and style to everyone. We create premium-quality clothing and accessories
+            with minimalist designs, bold details, and long-lasting comfort. Every piece is
+            crafted to make you feel unique, powerful, and effortlessly stylish—because at CASTLE,
+            we believe fashion isn’t just what you wear, it’s how you carry yourself. Welcome to
+            a brand where simplicity meets royalty.
+        </p>
+    </div>
+
+    <div class="footer-center">
+        <ul>
+            <li>Home</li>
+            <li>Bestsellers</li>
+            <li>Accessories</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+
+    <div class="footer-right">
+      <ul>
+        <li><p>📞+91 98765 43210</p></li>
+        <li><p>🐦Twitter: @castle_official</p></li>
+        <li><p>📘Facebook: CastleWear</p></li>
+        </ul>
+    </div>
+
+    
+</footer>
+  
+<script src="C:\Users\rbara\OneDrive\Desktop\Divya Barathy App\main (1).js"></script>
+</body>
+</html>
